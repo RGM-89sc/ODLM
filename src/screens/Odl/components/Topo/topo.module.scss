@@ -1,0 +1,128 @@
+.topo {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(100vh - 180px);
+  border: 1px solid #bbb;
+
+  .control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(200, 200, 200, 0.4);
+
+    .control-left {
+      .color-ctrl {
+        display: inline-flex;
+        align-items: center;
+
+        .switch-color-ctrl {
+          display: inline-block;
+          position: relative;
+          z-index: 999;
+        }
+
+        .switch-color-preview, .host-color-preview {
+          display: inline-block;
+          margin: 0 5px;
+          width: 15px;
+          height: 15px;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+
+        .switch-color-picker {
+          position: absolute;
+          top: 40px;
+          left: 200px;
+          z-index: 999;
+        }
+
+        .host-color-ctrl {
+          display: inline-block;
+          position: relative;
+          z-index: 999;
+        }
+
+        .host-color-picker {
+          position: absolute;
+          top: 40px;
+          left: 200px;
+          z-index: 999;
+        }
+      }
+    }
+
+    .control-right {
+      text-align: right;
+    }
+  }
+
+  .topo-box {
+    width: 100%;
+    height: 100%;
+  }
+
+  .topo-info {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    padding: 10px;
+    min-width: 140px;
+    z-index: 1;
+    background-color: rgba(120, 120, 120, 0.8);
+    border-radius: 5px;
+    user-select: none;
+
+    .topo-info-item {
+      display: block;
+      padding: 2px 0;
+      color: white;
+    }
+  }
+
+  .host-list {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    padding: 10px;
+    min-width: 140px;
+    max-height: 60vh;
+    overflow-y: scroll;
+    z-index: 1;
+    background-color: rgba(120, 120, 120, 0.8);
+    border-radius: 5px;
+    user-select: none;
+
+    .host-list-item {
+      margin-bottom: 10px;
+      color: white;
+    }
+  }
+
+  .topo-info-ctrl {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    padding: 10px;
+    min-width: 150px;
+    z-index: 1;
+    background-color: rgba(120, 120, 120, 0.8);
+    border-radius: 5px;
+    user-select: none;
+
+    .topo-info-ctrl-item {
+      display: flex;
+      align-items: center;
+
+      span {
+        display: inline-block;
+        padding: 4px 0;
+        width: 100px;
+        color: white;
+      }
+    }
+  }
+}

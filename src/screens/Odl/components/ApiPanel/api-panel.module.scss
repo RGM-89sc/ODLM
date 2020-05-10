@@ -1,0 +1,9 @@
+.api-panel {
+  flex: 1;
+  overflow: auto;
+
+  .api-list {
+    height: calc(100vh - 194px);
+    overflow: auto;
+  }
+}
