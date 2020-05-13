@@ -322,7 +322,8 @@ class Topo extends React.Component<IProps, IState> {
     }
     const options = {
       physics: {
-        enabled: false
+        enabled: true,
+        timestep: 0.7
       },
       nodes: {
         shape: 'dot',
